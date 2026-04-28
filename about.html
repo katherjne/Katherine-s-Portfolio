@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>About — Katherine Jiang</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Inter:wght@300;400;500&family=Cormorant+Garamond:ital,wght@1,300;1,400&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<div id="loader"><div class="loader-initials">KJ</div></div>
+<div id="progress"></div>
+
+<nav>
+  <div class="nav-inner">
+    <a href="index.html" class="nav-name">Katherine Jiang</a>
+    <div class="nav-right">
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html" class="active">About</a>
+        <a href="projects.html">Work</a>
+        <a href="index.html#contact">Contact</a>
+      </div>
+      <button class="dark-toggle" onclick="toggleDark()" id="darkBtn">Dark</button>
+    </div>
+  </div>
+</nav>
+
+<section class="page-header fade-in">
+  <div class="wrap">
+    <div class="page-eyebrow">About Me</div>
+    <h1 class="page-title">
+      DESIGNER &amp;<br>DEVELOPER
+    </h1>
+  </div>
+</section>
+
+<section class="about-section">
+  <div class="wide-wrap">
+    <div class="about-grid fade-in">
+      <img src="profile.jpg" alt="Katherine Jiang" class="about-img"/>
+      <div>
+        <div class="section-eyebrow">About</div>
+        <div class="about-name">Katherine<br>Jiang</div>
+        <p class="about-text">I am a first year at Northeastern University studying Computer Science and Business Administration. My passion for design and creation stemmed from my childhood and has only grown since entering college.</p>
+        <p class="about-text">I have been able to harbor my creativity in website development and UI/UX design through clubs like Oasis and Scout where I have worked with peers and clients that impact my community. I enjoy synthesizing diverse viewpoints and merging engineering requirements to stakeholder expectations into a cohesive product roadmap.</p>
+        <div class="skills-block">
+          <div class="section-eyebrow">My Skills Include</div>
+          <div class="skills-row"><span class="skills-label">Languages</span><span class="skills-val">Java · Python</span></div>
+          <div class="skills-row"><span class="skills-label">Development</span><span class="skills-val">CSS · JavaScript · React · Node.js</span></div>
+          <div class="skills-row"><span class="skills-label">Design</span><span class="skills-val">Figma · Adobe Photoshop · Adobe Illustrator</span></div>
+          <div class="skills-row"><span class="skills-label">Tools</span><span class="skills-val">Visual Studio · Microsoft Office Suite</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="foot-inner">
+    <span>© 2025 Katherine Jiang</span>
+    <span>Product Design · Software Development</span>
+  </div>
+</footer>
+
+<script>
+window.addEventListener('load',()=>{
+  setTimeout(()=>{document.getElementById('loader').classList.add('hide')},1200);
+});
+window.addEventListener('scroll',()=>{
+  var s=document.documentElement.scrollTop;
+  var h=document.documentElement.scrollHeight-window.innerHeight;
+  document.getElementById('progress').style.width=(s/h*100)+'%';
+});
+var obs=new IntersectionObserver((entries)=>{
+  entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible')});
+},{threshold:.12});
+document.querySelectorAll('.fade-in').forEach(el=>obs.observe(el));
+setTimeout(()=>document.querySelector('.page-header').classList.add('visible'),1300);
+function toggleDark(){
+  document.body.classList.toggle('dark');
+  document.getElementById('darkBtn').textContent=document.body.classList.contains('dark')?'Light':'Dark';
+}
+</script>
+</body>
+</html>

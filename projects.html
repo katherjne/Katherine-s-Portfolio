@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Work — Katherine Jiang</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Inter:wght@300;400;500&family=Cormorant+Garamond:ital,wght@1,300;1,400&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<div id="loader"><div class="loader-initials">KJ</div></div>
+<div id="progress"></div>
+
+<nav>
+  <div class="nav-inner">
+    <a href="index.html" class="nav-name">Katherine Jiang</a>
+    <div class="nav-right">
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html" class="active">Work</a>
+        <a href="index.html#contact">Contact</a>
+      </div>
+      <button class="dark-toggle" onclick="toggleDark()" id="darkBtn">Dark</button>
+    </div>
+  </div>
+</nav>
+
+<section class="page-header fade-in">
+  <div class="wrap">
+    <div class="page-eyebrow">Selected Work</div>
+    <h1 class="page-title">
+      <span class="light">03 Projects</span>
+      WORK
+    </h1>
+  </div>
+</section>
+
+<section class="work-section">
+  <div class="wrap">
+
+    <div id="project-1" class="project fade-in" onclick="toggleDetail('d1')" data-detail="d1">
+      <div class="proj-top">
+        <div class="proj-num">01</div>
+        <div>
+          <div class="proj-org">Scout</div>
+          <h3 class="project-title">Superpower<br>Mentors</h3>
+          <div class="project-tags">
+            <span class="tag">UI/UX</span><span class="tag">Branding</span><span class="tag">Figma</span>
+          </div>
+          <span class="project-status complete">Complete</span>
+          <div><span class="proj-cta">View Case Study ↓</span></div>
+        </div>
+        <div>
+          <p class="project-desc">A strategic rebrand of SuperPower Mentors' website to better communicate impact, trust, and value — particularly to families — while remaining inclusive of students, mentors, and partner organizations.</p>
+          <p class="proj-role">Role: <strong>Junior Designer &amp; Developer</strong></p>
+        </div>
+      </div>
+    </div>
+    <div class="detail-panel" id="d1">
+      <div class="detail-inner">
+        <div class="detail-cols">
+          <div>
+            <h3>Project Details</h3>
+            <p>Strategic retouch of SuperPower Mentors' brand identity and website, focusing on visual language, storytelling, and UX refinements.</p>
+            <div style="margin-top:1rem">
+              <div class="detail-step"><span class="step-num">01</span><span class="step-text">Mood boarding — 4 visual directions balancing warmth and growth</span></div>
+              <div class="detail-step"><span class="step-num">02</span><span class="step-text">Color palette — Purple, Yellow, and Black as primary brand colors</span></div>
+              <div class="detail-step"><span class="step-num">03</span><span class="step-text">Sitemap — consultation, mentoring, safety, and blog pages</span></div>
+              <div class="detail-step"><span class="step-num">04</span><span class="step-text">Low → Mid → High fidelity wireframes for 6 core pages</span></div>
+            </div>
+          </div>
+          <div>
+            <h3>Design System</h3>
+            <p>Color palette draws on deep purple (#571477), vibrant orange, and warm yellows. Pages: Home, Mentoring, Blog, About Us, Community, Safety.</p>
+            <a href="https://superpower-mentors-k7pv.vercel.app/" target="_blank" class="proto-link">View Live Site →</a>
+          </div>
+        </div>
+        <div class="img-grid">
+          <div class="img-item"><p>Moodboard</p><img src="scout-moodboard.png" alt="Moodboard"/></div>
+          <div class="img-item"><p>Color Palette</p><img src="scout-colors.png" alt="Colors"/></div>
+          <div class="img-item"><p>Low-Fi Wireframes</p><img src="scout-wireframes-lo.png" alt="Low-fi"/></div>
+          <div class="img-item"><p>Mid-Fi Wireframes</p><img src="scout-wireframes-mid.png" alt="Mid-fi"/></div>
+          <div class="img-item img-full"><p>High-Fi Wireframes</p><img src="scout-wireframes-hi.png" alt="High-fi"/></div>
+        </div>
+        <div class="close-btn" onclick="event.stopPropagation();closeDetail('d1')">Close ✕</div>
+      </div>
+    </div>
+
+    <div id="project-2" class="project fade-in" onclick="toggleDetail('d2')" data-detail="d2">
+      <div class="proj-top">
+        <div class="proj-num">02</div>
+        <div>
+          <div class="proj-org">Oasis</div>
+          <h3 class="project-title">Groove<br>Scout</h3>
+          <div class="project-tags">
+            <span class="tag">React</span><span class="tag">Node.js</span><span class="tag">Frontend</span>
+          </div>
+          <span class="project-status complete">Complete</span>
+          <div><span class="proj-cta">View Case Study ↓</span></div>
+        </div>
+        <div>
+          <p class="project-desc">A unified vinyl record search platform aggregating listings from multiple marketplaces — so collectors and casual listeners can instantly discover availability, condition, and lowest price.</p>
+          <p class="proj-role">Role: <strong>Front-end Developer</strong></p>
+        </div>
+      </div>
+    </div>
+    <div class="detail-panel" id="d2">
+      <div class="detail-inner">
+        <div class="detail-cols">
+          <div>
+            <h3>Project Details</h3>
+            <p>Built with CSS, JavaScript, Node, and React. Solves the frustration of hunting across dozens of marketplaces to find a specific vinyl record.</p>
+            <div style="margin-top:1rem">
+              <div class="detail-step"><span class="step-num">01</span><span class="step-text">Aggregates listings from multiple sites into one destination</span></div>
+              <div class="detail-step"><span class="step-num">02</span><span class="step-text">Shows condition info and lowest price per record</span></div>
+              <div class="detail-step"><span class="step-num">03</span><span class="step-text">Search by vinyl record, artist, or album</span></div>
+              <div class="detail-step"><span class="step-num">04</span><span class="step-text">Account system with favorites and listing views</span></div>
+            </div>
+          </div>
+          <div>
+            <h3>Technical Stack</h3>
+            <p>React frontend, Node.js backend, CSS for a clean minimal dark-themed UI centered around a single search experience.</p>
+          </div>
+        </div>
+        <div class="img-grid two">
+          <div class="img-item"><p>App UI</p><img src="groove-ui.png" alt="Groove UI"/></div>
+          <div class="img-item"><p>Codebase</p><img src="groove-code.png" alt="Groove code"/></div>
+        </div>
+        <div class="close-btn" onclick="event.stopPropagation();closeDetail('d2')">Close ✕</div>
+      </div>
+    </div>
+
+    <div id="project-3" class="project fade-in" onclick="toggleDetail('d3')" data-detail="d3">
+      <div class="proj-top">
+        <div class="proj-num">03</div>
+        <div>
+          <div class="proj-org">Personal</div>
+          <h3 class="project-title">Emerald City<br>Pet Shelter</h3>
+          <div class="project-tags">
+            <span class="tag">UX Design</span><span class="tag">Dashboard</span><span class="tag">Figma</span>
+          </div>
+          <span class="project-status complete">Complete</span>
+          <div><span class="proj-cta">View Case Study ↓</span></div>
+        </div>
+        <div>
+          <p class="project-desc">A desktop animal health dashboard for shelter volunteers to log daily observations, medical appointments, vaccinations, and behavioral notes — replacing paper forms for 30+ volunteers.</p>
+          <p class="proj-role">Role: <strong>Software Designer</strong></p>
+        </div>
+      </div>
+    </div>
+    <div class="detail-panel" id="d3">
+      <div class="detail-inner">
+        <div class="detail-cols">
+          <div>
+            <h3>Project Details</h3>
+            <p>Designed to digitize Emerald City Pet Shelter's animal tracking, improving accuracy, accessibility, and coordination among 30+ volunteers.</p>
+            <div style="margin-top:1rem">
+              <div class="detail-step"><span class="step-num">01</span><span class="step-text">Competitive analysis — reviewed ezyVet and Pet Manager</span></div>
+              <div class="detail-step"><span class="step-num">02</span><span class="step-text">Workflow mapping — Health Dashboard &amp; Log a Check-up flows</span></div>
+              <div class="detail-step"><span class="step-num">03</span><span class="step-text">Sitemap — homepage through to animal-level pet dashboards</span></div>
+              <div class="detail-step"><span class="step-num">04</span><span class="step-text">Low → High fidelity wireframes in Figma</span></div>
+            </div>
+          </div>
+          <div>
+            <h3>Design Decisions</h3>
+            <p>Branding uses Deep Green, Sage Green, and Sky Blue. Check-up tracking captures date, weight, appetite status, and volunteer name through a clean modal overlay.</p>
+            <a href="https://www.figma.com/proto/lCp24ODwIBUyFtIlBLG2x3/Katherine-Jiang-FA26-Design-Take-Home-Challenge--Copy-?node-id=4-9&p=f&viewport=108%2C260%2C0.19&t=OcMGCJDb1Zufh8Bd-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=4%3A9&page-id=4%3A8" target="_blank" class="proto-link">View Prototype →</a>
+          </div>
+        </div>
+        <div class="img-grid">
+          <div class="img-item"><p>Branding</p><img src="shelter-branding.png" alt="Branding"/></div>
+          <div class="img-item"><p>Sitemap</p><img src="shelter-sitemap.png" alt="Sitemap"/></div>
+          <div class="img-item"><p>Workflow Mapping</p><img src="shelter-workflows.png" alt="Workflows"/></div>
+          <div class="img-item"><p>Low-Fi Wireframes</p><img src="shelter-wireframes-lo.png" alt="Low-fi"/></div>
+          <div class="img-item img-full"><p>High-Fi Wireframes</p><img src="shelter-wireframes-hi.png" alt="High-fi"/></div>
+        </div>
+        <div class="close-btn" onclick="event.stopPropagation();closeDetail('d3')">Close ✕</div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  <div class="foot-inner">
+    <span>© 2025 Katherine Jiang</span>
+    <span>Product Design · Software Development</span>
+  </div>
+</footer>
+
+<script>
+window.addEventListener('load',()=>{
+  setTimeout(()=>{document.getElementById('loader').classList.add('hide')},1200);
+  var hash=window.location.hash;
+  if(hash){
+    var target=document.querySelector(hash);
+    if(target){
+      var detailId=target.getAttribute('data-detail');
+      if(detailId){
+        setTimeout(()=>{
+          document.getElementById(detailId).classList.add('open');
+          target.scrollIntoView({behavior:'smooth',block:'start'});
+        },1400);
+      }
+    }
+  }
+});
+window.addEventListener('scroll',()=>{
+  var s=document.documentElement.scrollTop;
+  var h=document.documentElement.scrollHeight-window.innerHeight;
+  document.getElementById('progress').style.width=(s/h*100)+'%';
+});
+var obs=new IntersectionObserver((entries)=>{
+  entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible')});
+},{threshold:.12});
+document.querySelectorAll('.fade-in').forEach(el=>obs.observe(el));
+setTimeout(()=>document.querySelector('.page-header').classList.add('visible'),1300);
+function toggleDark(){
+  document.body.classList.toggle('dark');
+  document.getElementById('darkBtn').textContent=document.body.classList.contains('dark')?'Light':'Dark';
+}
+function toggleDetail(id){
+  var p=document.getElementById(id);
+  var open=p.classList.contains('open');
+  document.querySelectorAll('.detail-panel').forEach(x=>x.classList.remove('open'));
+  if(!open){p.classList.add('open');setTimeout(()=>p.scrollIntoView({behavior:'smooth',block:'nearest'}),50)}
+}
+function closeDetail(id){document.getElementById(id).classList.remove('open')}
+</script>
+</body>
+</html>
